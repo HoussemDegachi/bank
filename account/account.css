@@ -38,7 +38,7 @@ html {
 #transactions {
   max-width: 300px;
   width: 100%;
-  height: calc(100vh - 52px);
+  height: calc(100dvh - 52px);
   background-color: var(--primary);
   border-top: 1px solid var(--black);
   animation: slideIn 1s ease;
@@ -82,7 +82,7 @@ html {
 
 #operations {
   width: 100%;
-  height: calc(100vh - 52px);
+  height: calc(100dvh - 52px);
   overflow-y: auto;
 }
 
