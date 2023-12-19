@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="shortcut icon" href="../assets/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../app.css">
+    <link rel="stylesheet" href="account.css">
+    <script type="module" src="account.js" defer></script>
+</head>
+<body>
+    <section id="bar">
+        <div>
+            <a href="../index.html">
+                <figure id="bar--img">
+                    <img src="../assets/icon.png" alt="">
+                </figure>
+            </a>
+            <h1>Balance: <span id="account-balance">0</span>$</h1>
+        </div>
+        <button id="history-btn">History</button>
+    </section>
+    <main id="main-content">
+        <section id="operations">
+            <ul id="operations-wrapper">
+                <li id="deposit" class="operation">
+                    <h2 class="block--title">Deposit</h2>
+                    <form action="" class="operation--form" id="deposit--form">
+                        <label class="operation--label" for="deposit--ammount">Ammount</label>
+                    <input required class="operation--input" type="number" id="deposit--ammount" name="ammount" min="5" placeholder="USD">
+                    <button class="operation--submit" type="submit">Deposit</button>
+                </form>
+            </li>
+            <li id="withdraw" class="operation">
+                <h2 class="block--title">Withdraw</h2>
+                <form action="" class="operation--form" id="withdraw--form">
+                    <label class="operation--label" for="withdraw--ammount">Ammount</label>
+                    <input required class="operation--input" type="number" id="withdraw--ammount" name="ammount" min="5" placeholder="USD">
+                    <button class="operation--submit" type="submit">withdraw</button>
+                </form>
+            </li>
+            <li id="transfer" class="operation">
+                <h2 class="block--title">Transfer</h2>
+                <form action="" class="operation--form" id="transfer--form">
+                    <label class="operation--label" for="transfer--ammount">Target Account</label>
+                    <input required class="operation--input" type="number" id="transfer--account" name="target_id" placeholder="ID">
+                    <label class="operation--label" for="transfer--ammount">Ammount</label>
+                    <input required class="operation--input" type="number" id="transfer--ammount" name="ammount" placeholder="USD">
+                    <button class="operation--submit" type="submit">Transfer</button>
+                </form>
+            </li>
+        </ul>
+        </section>
+        <section id="transactions" class="hide">
+            <ul id="transactions-list">
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

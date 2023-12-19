@@ -1,0 +1,67 @@
+/* 
+    main
+*/
+
+#accounts-container {
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 52px);
+    overflow-y: auto;
+}
+
+#accounts {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 60px 40px;
+    margin-bottom: 40px;
+}
+
+.account {
+    border: 1px solid var(--black);
+    border-radius: 10px;
+    max-width: 300px;
+    min-width: 250px;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.block--description {
+    display: flex;
+    margin-bottom: 18px;
+}
+
+.account--btn {
+    color: var(--white);
+    padding: 4px 8px;
+    border-radius: 6px;
+    font-size: 18px;
+}
+
+.account--open {
+    background-color: var(--primary);
+    margin-right: 8px;
+}
+
+.account--remove {
+    background-color: var(--red);
+    cursor: pointer;
+}
+
+#create-account {
+    font-size: 20px;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 8px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+@media (max-width: 400px) {
+    #accounts-container {
+        padding: 40px 20px;
+    }
+}
